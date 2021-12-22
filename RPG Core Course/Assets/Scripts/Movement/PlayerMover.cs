@@ -16,23 +16,12 @@ public class PlayerMover : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButton(0))
-        {
-            MoveToCursor();
-        }
         UpdateAnimator();
     }
 
-
-    void MoveToCursor()
+    public void MoveTo(Vector3 destination)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-        if(hasHit)
-        {
-            agent.SetDestination(hit.point);
-        }
+        agent.SetDestination(destination);
     }
 
     private void UpdateAnimator()
