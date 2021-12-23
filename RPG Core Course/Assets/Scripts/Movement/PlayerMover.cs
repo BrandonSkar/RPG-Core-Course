@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using RPG.Core;
 
 namespace RPG.Movement
 {
-    public class PlayerMover : MonoBehaviour
+    public class PlayerMover : MonoBehaviour, IAction
     {
         [SerializeField] Transform target;
         NavMeshAgent agent;
@@ -18,9 +19,21 @@ namespace RPG.Movement
             UpdateAnimator();
         }
 
+        public void StartMoveAction(Vector3 destination)
+        {
+            GetComponent<ActionScheduler>().StartAction(this);
+            MoveTo(destination);
+        }
+
         public void MoveTo(Vector3 destination)
         {
             agent.SetDestination(destination);
+            agent.isStopped = false;
+        }
+
+        public void Cancel()
+        {
+            agent.isStopped = true;
         }
 
         private void UpdateAnimator()
