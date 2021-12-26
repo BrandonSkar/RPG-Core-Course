@@ -8,6 +8,9 @@ namespace RPG.SceneManagement
 {
     public class Portal : MonoBehaviour
     {
+        [SerializeField] float fadeOutTime = 0.5f;
+        [SerializeField] float fadeInTime = 1.0f;
+        [SerializeField] float fadeWaitTime = 0.5f;
         enum DestinationIdentifier
         {
             A, B, C, D, E, F
@@ -26,13 +29,25 @@ namespace RPG.SceneManagement
 
         private IEnumerator Transition()
         {
+            if(sceneToLoad < 0)
+            {
+                Debug.LogError("Scene to load not set.");
+                yield break;
+            }
+
             DontDestroyOnLoad(gameObject);
+
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeOut(fadeOutTime);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+
+            yield return new WaitForSeconds(fadeWaitTime);
+            yield return fader.FadeIn(fadeInTime);
             
-            Debug.Log("Scene Loaded");
             Destroy(gameObject);
         }
 
