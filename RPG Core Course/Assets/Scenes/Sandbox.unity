@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124454215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3, y: 0.05, z: 17.35}
+  m_LocalPosition: {x: 6.6500006, y: 0.05, z: 5.0699997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092712203}
@@ -394,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260448952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.38, y: 0, z: 14.19}
+  m_LocalPosition: {x: -0.42999935, y: 0, z: 1.9099989}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092712203}
@@ -494,6 +494,11 @@ PrefabInstance:
       propertyPath: patrolSpeedFraction
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5420914724982976901, guid: 15b4fc4bbadbcf9438569c1e72c3ca42,
+        type: 3}
+      propertyPath: patrolPath
+      value: 
+      objectReference: {fileID: 1092712204}
     - target: {fileID: 7076211534355999714, guid: 15b4fc4bbadbcf9438569c1e72c3ca42,
         type: 3}
       propertyPath: weaponDamage
@@ -542,7 +547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341053859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.44, y: 0, z: 8.62}
+  m_LocalPosition: {x: -1.49, y: 0, z: -3.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092712203}
@@ -1442,7 +1447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961725608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.41, y: 0, z: 14.41}
+  m_LocalPosition: {x: -0.45999908, y: 0, z: 2.1299992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092712203}
@@ -1660,7 +1665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092712202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.33, y: 0, z: 12.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 341053860}
@@ -2952,7 +2957,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4056604, y: 1}
+    m_SensorSize: {x: 0.9622642, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3573,7 +3578,7 @@ PrefabInstance:
     - target: {fileID: 5675360393000106294, guid: be155e2fc6337424dbb84ab772b7b1ee,
         type: 3}
       propertyPath: uniqueIdentifier
-      value: fb5d639a-24e8-442a-b29b-1b4186f0aa1b
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be155e2fc6337424dbb84ab772b7b1ee, type: 3}
