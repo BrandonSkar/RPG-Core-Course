@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2980652002557929159}
+  - component: {fileID: 7535063912221139685}
   - component: {fileID: 1323870567022545699}
   m_Layer: 0
   m_Name: Arrow Projectile
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7535063912221139685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927610708459765549}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.13, z: 0.61986125}
+  m_Center: {x: 0, y: 0, z: 0.27}
 --- !u!114 &1323870567022545699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8cdc595c9c25449886f0e3c729603f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 30
 --- !u!1001 &8500151457018545428
 PrefabInstance:
   m_ObjectHideFlags: 0
