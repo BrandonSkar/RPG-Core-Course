@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
-using RPG.Saving;
 
 namespace RPG.SceneManagement
 {
@@ -55,7 +53,7 @@ namespace RPG.SceneManagement
             UpdatePlayer(otherPortal);
 
             wrapper.Save();
-            
+
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
             
