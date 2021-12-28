@@ -23,13 +23,19 @@ namespace RPG.Attributes
 
         
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if(healthPoints == 0)
             {
+                AwardExperience(instigator);
                 Die();
             }
+        }
+
+        public float GetPercentage()
+        {
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
         }
 
         private void Die()
@@ -39,6 +45,15 @@ namespace RPG.Attributes
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+            if(experience == null) return;
+            
+            float experienceReward = GetComponent<BaseStats>().GetExperienceReward();
+            experience.GainExperience(experienceReward);
         }
 
         public object CaptureState()

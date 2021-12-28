@@ -3325,7 +3325,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1179246, y: 1}
+    m_SensorSize: {x: 1.394654, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3869,6 +3869,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 754688506795561003, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 754688506795561003, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 754688506795561003, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 754688506795561003, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 754688506795561003, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5333648508207413346, guid: be155e2fc6337424dbb84ab772b7b1ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3992,6 +4017,31 @@ PrefabInstance:
     - target: {fileID: 6575041904955189247, guid: be155e2fc6337424dbb84ab772b7b1ee,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937791018041573059, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937791018041573059, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937791018041573059, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937791018041573059, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937791018041573059, guid: be155e2fc6337424dbb84ab772b7b1ee,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
