@@ -9,10 +9,11 @@ namespace RPG.Control
     {
         Health health;
 
-        private void Start() 
+        private void Awake() 
         {
-            health = GetComponent<Health>();    
+            health = GetComponent<Health>();
         }
+        
         private void Update()
         {
             if(health.IsDead()) return;
