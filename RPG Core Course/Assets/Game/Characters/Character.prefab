@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 136091599918347284}
   - component: {fileID: 1811492680}
   - component: {fileID: 3227952475787291172}
-  - component: {fileID: 4167607297884252187}
+  - component: {fileID: 5766804680813205467}
   - component: {fileID: 5693836976639711475}
   - component: {fileID: 5627505957050487468}
-  - component: {fileID: 3247020096617678676}
   - component: {fileID: 4437501710301853321}
   - component: {fileID: 2202117755268264629}
   - component: {fileID: 467582973207518238}
@@ -151,7 +150,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4167607297884252187
+--- !u!114 &5766804680813205467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,6 +163,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   regenerationPercentage: 75
+  takeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5868571399846223452}
+        m_MethodName: Spawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5693836976639711475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,19 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e468be7966cab248979744a86eb61ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3247020096617678676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5334003041559435590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36de2aaa3e531243a30d4ad9d8c2f28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  regenerationPercentage: 75
 --- !u!114 &4437501710301853321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,3 +323,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1145041509858966990}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5868571399846223452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6815454455230735250, guid: 9e4b67b4461b25449aa90c4beef1a3c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1145041509858966990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ac9321cf7c9ce4fbedf979f912143c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -175,6 +175,11 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 1241815686518008694}
+    - target: {fileID: 6749295294644342317, guid: 6873884dd76d7c445b9e3a2d12e4edbb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7851421383477945637, guid: 6873884dd76d7c445b9e3a2d12e4edbb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -230,7 +235,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4167607297884252187, guid: 6873884dd76d7c445b9e3a2d12e4edbb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6873884dd76d7c445b9e3a2d12e4edbb, type: 3}
 --- !u!1 &5786935121731614504 stripped
 GameObject:
