@@ -2,6 +2,8 @@ using UnityEngine;
 using RPG.Movement;
 using RPG.Combat;
 using RPG.Attributes;
+using System;
+using UnityEngine.EventSystems;
 
 namespace RPG.Control
 {
@@ -16,10 +18,16 @@ namespace RPG.Control
         
         private void Update()
         {
+            if(InteractWithUI()) return;
             if(health.IsDead()) return;
             
             if(InteractWithCombat()) return;
             if(InteractWithMovement()) return;
+        }
+
+        private bool InteractWithUI()
+        {
+            return EventSystem.current.IsPointerOverGameObject();
         }
 
         private bool InteractWithCombat()
